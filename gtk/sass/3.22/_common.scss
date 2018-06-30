@@ -32,7 +32,7 @@ $titlebutton_small: if($ref_weight < 1.0, 20px, 28px);
                        box-shadow,
                        icon-shadow;
   transition-timing-function: $slope_medium;
-  transition-duration: 0.2s;
+  transition-duration: 0.4s;
 }
 
 
@@ -4768,7 +4768,7 @@ scrolledwindow {
 
   junction { // the small square between two scrollbars
     border-color: transparent;
-    // the border image is used to add the missing dot 
+    // the border image is used to add the missing dot
     // between the borders, details, details, details...
     border-image: linear-gradient(to bottom,
                                   $borders_color 1px,
@@ -6505,4 +6505,3 @@ button.emoji-section.text-button:not(.image-button) {
     &, &:hover { color: $selected_bg_color; }
   }
 }
-
