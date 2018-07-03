@@ -28,8 +28,8 @@
 // Foreground colors
 //
 
-$fg_color: if($variant == light, #263238,                       // = BluGry900
-                                 #CFD8DC);                      // = BluGry100
+$fg_color: if($variant == light, #323232,                       // = BluGry900
+                                 #dedede);                      // = BluGry100
 $secondary_fg_color: gtkopacity($fg_color, 0.87);
 $tertiary_fg_color: gtkopacity($fg_color, 0.54);
 
@@ -55,8 +55,8 @@ $placeholder_text_color: #78909C;                               // = BluGry400
 // Inverted foreground colors
 //
 
-$inverted_fg_color: if($variant == light, #263238,                       // = BluGry100*
-                                          #CFD8DC);                      // = BluGry900*
+$inverted_fg_color: if($variant == light, #323232,                       // = BluGry100*
+                                          #dedede);                      // = BluGry900*
 $inverted_secondary_fg_color: gtkopacity($inverted_fg_color, 0.87);
 $inverted_tertiary_fg_color: gtkopacity($inverted_fg_color, 0.54);
 
@@ -64,7 +64,7 @@ $insensitive_inverted_fg_color: gtkopacity($inverted_fg_color, 0.28);
 $insensitive_inverted_secondary_fg_color:
   gtkopacity($inverted_secondary_fg_color, 0.28);
 
-$fixed_fg_color: #263238;                                       // = BluGry900
+$fixed_fg_color: #323232;                                       // = BluGry900
 $secondary_fixed_fg_color: gtkopacity($fixed_fg_color, 0.87);
 $tertiary_fixed_fg_color: gtkopacity($fixed_fg_color, 0.54);
 $insensitive_fixed_fg_color: gtkopacity($fixed_fg_color, 0.28);
@@ -76,22 +76,22 @@ $unfocused_inverted_fg_color: gtkopacity($inverted_fg_color, 0.4);
 // Background colors
 //
 
-$bg_color: if($variant == light, mix(#FFFFFF, #ECEFF1, 75%),    // = #FAFBFC
-                                   #263238);                    // = BluGry900
+$bg_color: if($variant == light, mix(#FFFFFF, #eeeeee, 75%),    // = #FAFBFC
+                                   #323232);                    // = BluGry900
 $base_color: if($variant == light,
                 #FFFFFF,                                        // = White
-                mix(#263238, #37474F, 85%));                    // = #29353B
+                mix(#323232, #424242, 85%));                    // = #29353B
 $secondary_base_color: mix($base_color, $bg_color, 50%);        // = #FDFDFE
                                                                 // = #28343A
 $light_color: if($variant == light,
                  $base_color,                                   // = White
-                 mix(#263238, #37474F, 50%));                   // = #2F3D44
+                 mix(#323232, #424242, 50%));                   // = #2F3D44
 $dark_color: if($variant == light,
-                mix(#ECEFF1, #CFD8DC, 75%),                     // = #E5E9EC
-                mix(#263238, #000000, 90%));                    // = #222D32
+                mix(#ECEFF1, #dedede, 75%),                     // = #E5E9EC
+                mix(#323232, #000000, 90%));                    // = #222D32
 $secondary_dark_color: if($variant == light,
                           mix(#FFFFFF, #ECEFF1, 60%),           // = #F7F9F9
-                          mix(#263238, #000000, 95%));          // = #243035
+                          mix(#323232, #000000, 95%));          // = #243035
 
 
 //
@@ -99,13 +99,13 @@ $secondary_dark_color: if($variant == light,
 //
 
 $inverted_bg_color:if($variant == light, #ffffff,                       // = BluGry100*
-                                          #263238);                     // = BluGry900*
-$inverted_base_color: if($variant == light, mix(#ffffff, #37474F, 85%),
-                                                                #263238);               // = #29353B
-$inverted_light_color: if($variant == light, mix(#ffffff, #37474F, 50%),
-                                                                #263238);              // = #2F3D44
-$inverted_dark_color: if($variant == light, mix(#ffffff, #000000, 90%),
-                                                                #263238);               // = #222D32
+                                          #323232);                     // = BluGry900*
+$inverted_base_color: if($variant == light, mix(#ffffff, #424242, 85%),
+                                                                #323232);               // = #29353B
+$inverted_light_color: if($variant == light, mix(#ffffff, #424242, 50%),
+                                                                #323232);              // = #2F3D44
+$inverted_dark_color: if($variant == light, mix(#ffffff, #000000, 95%),
+                                                                #323232);               // = #222D32
 
 
 //
@@ -209,5 +209,5 @@ $solid_blue: #2196F3;                                           // = Blue500
 // Solid panel color
 //
 
-$panel_bg_color: mix(#CFD8DC, #000000, 50%);                    // = #13191C
+$panel_bg_color: mix(#dedede, #000000, 50%);                    // = #13191C
 $panel_separator_color: gtkopacity($inverted_fg_color, 0.12 * 0.55);
